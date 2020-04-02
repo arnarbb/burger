@@ -140,10 +140,14 @@ body{
 }
 
 .kassi{
-  align-items: center;
-  
+  background-color: rgb(184, 182, 182);
+  display: grid;  
+  font-size: 100%;
+  width: 110%;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;  
   margin: 5px;
-  border: 2px solid black;
+  border: black solid 3px;
   display: flex;
   justify-content: center;
   
@@ -192,3 +196,75 @@ img {
     }
   }
 }
+ 
+#bretti {
+  height: 500px;
+  size: 50px;
+}
+
+#isk-kr{
+  animation: kr 1s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation-direction: alternate;
+}
+
+#skor {
+  animation: sko 2s ease infinite ;
+  animation-direction: alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+  
+}
+
+div.slide-right{
+  width: 110%;
+  overflow: hidden;
+}
+div.slide-right h1{
+  
+  animation: 5s slide-right infinite alternate;
+  background-color: rgb(209, 41, 41);
+  border-radius: 15px;
+  border: black solid 2px;
+
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 5%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes kr{
+  from{        
+      transform: scale(0.5) translateY(-100%);
+  }
+  to{
+      transform: scale(1) translateY(0%);         
+  }
+}
+
+@keyframes sko{
+  from{
+      transform:rotate(-10deg);
+  }
+  to{
+      transform:rotate(10deg)
+  }
+}
+

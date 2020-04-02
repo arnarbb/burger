@@ -152,11 +152,18 @@ body .upi .botom {
 }
 
 body .kassi {
+  background-color: #b8b6b6;
+  display: -ms-grid;
+  display: grid;
+  font-size: 100%;
+  width: 110%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 5px;
-  border: 2px solid black;
+  border: black solid 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,6 +206,110 @@ body img {
 @media only screen and (max-width: 800px) {
   body .cardd {
     width: 50%;
+  }
+}
+
+#bretti {
+  height: 500px;
+  size: 50px;
+}
+
+#isk-kr {
+  -webkit-animation: kr 1s ease infinite;
+          animation: kr 1s ease infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#skor {
+  -webkit-animation: sko 2s ease infinite;
+          animation: sko 2s ease infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+div.slide-right {
+  width: 110%;
+  overflow: hidden;
+}
+
+div.slide-right h1 {
+  -webkit-animation: 5s slide-right infinite alternate;
+          animation: 5s slide-right infinite alternate;
+  background-color: #d12929;
+  border-radius: 15px;
+  border: black solid 2px;
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 5%;
+    width: 100%;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 5%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes kr {
+  from {
+    -webkit-transform: scale(0.5) translateY(-100%);
+            transform: scale(0.5) translateY(-100%);
+  }
+  to {
+    -webkit-transform: scale(1) translateY(0%);
+            transform: scale(1) translateY(0%);
+  }
+}
+
+@keyframes kr {
+  from {
+    -webkit-transform: scale(0.5) translateY(-100%);
+            transform: scale(0.5) translateY(-100%);
+  }
+  to {
+    -webkit-transform: scale(1) translateY(0%);
+            transform: scale(1) translateY(0%);
+  }
+}
+
+@-webkit-keyframes sko {
+  from {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  to {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes sko {
+  from {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  to {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+ 
+#bretti {
+    height: 500px;
+    size: 50px;
+}
+
+#isk-kr{
+    animation: kr 1s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-direction: alternate;
+}
+
+#skor {
+    animation: sko 2s ease infinite ;
+    animation-direction: alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+    
+}
+
+
+@keyframes kr{
+    from{        
+        transform: scale(0.5) translateY(-100%);
+    }
+    to{
+        transform: scale(1) translateY(0%);         
+    }
+}
+
+@keyframes sko{
+    from{
+        transform:rotate(-10deg);
+    }
+    to{
+        transform:rotate(10deg)
+    }
+}
