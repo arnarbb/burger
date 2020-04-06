@@ -312,4 +312,75 @@ div.slide-right h1 {
             transform: rotate(10deg);
   }
 }
+
+#snow {
+  -webkit-animation: kr 1s ease infinite;
+          animation: kr 1s ease infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#orn {
+  -webkit-animation: sko 2s ease infinite;
+          animation: sko 2s ease infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#poop {
+  -webkit-animation: shake 2s;
+          animation: shake 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes kr {
+  from {
+    -webkit-transform: scale(0.9) translateY(-5%) rotate(-5deg);
+            transform: scale(0.9) translateY(-5%) rotate(-5deg);
+  }
+  to {
+    -webkit-transform: scale(1) translateY(0%) rotate(0deg);
+            transform: scale(1) translateY(0%) rotate(0deg);
+  }
+}
+
+@keyframes sko {
+  from {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  to {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(-10px, 50px) rotate(1deg);
+            transform: translate(-10px, 50px) rotate(1deg);
+  }
+  10% {
+    -webkit-transform: translate(-200px, -100px) rotate(-10deg);
+            transform: translate(-200px, -100px) rotate(-10deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(-10px, 50px) rotate(1deg);
+            transform: translate(-10px, 50px) rotate(1deg);
+  }
+  10% {
+    -webkit-transform: translate(-200px, -100px) rotate(-10deg);
+            transform: translate(-200px, -100px) rotate(-10deg);
+  }
+}
 /*# sourceMappingURL=style.css.map */

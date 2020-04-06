@@ -250,6 +250,7 @@ div.slide-right h1{
 
 
 
+
 @keyframes kr{
   from{        
       transform: scale(0.5) translateY(-100%);
@@ -266,5 +267,53 @@ div.slide-right h1{
   to{
       transform:rotate(10deg)
   }
+}
+
+#snow{    
+  animation: kr 1s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation-direction: alternate;
+}
+
+#orn {
+  animation: sko 2s ease infinite ;
+  animation-direction: alternate;
+  transform-origin: center;
+  transform-box: fill-box;    
+}
+
+#poop {
+  animation: shake 2s;  
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes kr{
+from{
+    transform: scale(0.9) translateY(-5%) rotate(-5deg);
+}
+to{
+    transform: scale(1) translateY(0%) rotate(0deg);
+}
+}
+
+@keyframes sko{
+from{
+    transform:rotate(-10deg);
+}
+to{
+    transform:rotate(10deg);
+}
+}
+
+
+
+
+@keyframes shake {
+  0% { transform: translate(-10px, 50px) rotate(1deg);}
+  10% { transform: translate(-200px, -100px) rotate(-10deg); }
+   
+  
 }
 
