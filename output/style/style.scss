@@ -143,7 +143,8 @@ body{
   background-color: rgb(184, 182, 182);
   display: grid;  
   font-size: 100%;
-  width: 110%;
+  width: 100%;
+  height: 100%;
   grid-template-rows: 1fr 1fr;
   align-items: center;  
   margin: 5px;
@@ -316,4 +317,120 @@ to{
    
   
 }
+.drop{
+  
+  display: none;
+  position: absolute;
+  right: 10px;
+}
 
+
+@media only screen and (max-width: 48em) {
+  body {
+    background-color: lightblue;
+  }
+  .utanum2{
+    position: absolute;
+    left: -1000px;
+  }  
+  
+ .burger {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  
+}
+.listi{
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  background-color: white ;
+}
+.drop{
+  display: flex;
+  flex-direction: column;
+}
+.utanum3{
+  display: block;
+}
+.utanum3 :hover{
+  background: green;  
+}
+
+.listi :active{  
+  
+   animation: example 5s;
+  
+}
+
+
+}
+
+@keyframes example {
+  from{        
+    transform: scale(0.5) translatex(100px);
+}
+  to{
+    transform: scale(1) translatex(0px);         
+}
+}
+
+
+
+.dropbtn {
+  display: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px;
+  font-size: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 60px;
+  
+}
+
+.dropdown {
+  
+  right: 5px;
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  
+  margin-left: -110px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {  
+  
+  color: black;
+  padding: 4px 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+  
+}
+
+@media only screen and (max-width: 48em){
+  .dropbtn{
+    display: inline-block;
+  }
+}
