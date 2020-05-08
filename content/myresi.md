@@ -1,6 +1,6 @@
 ---
 title: my recipe
-date: my recipe
+date: 2019-04-14
 tags: cocaina
 thumbnail: img/myspecialresp.jpg
 summary: Old fashioned cocaina.
