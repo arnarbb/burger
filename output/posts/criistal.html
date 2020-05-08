@@ -8,10 +8,12 @@
     
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    
     <link rel="stylesheet" href="/output/animation.css">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic@6.5.0/picnic.min.css">
     <link rel="stylesheet" href="../output/style/style.css">
     <link rel="stylesheet" href="../output/style/auka.css">
+    <link rel="stylesheet" href="formstyle.css">
     <!-- <link rel="stylesheet" href="main.css"> -->
     <title>My Recipes</title>
     <style>
@@ -112,7 +114,7 @@
     <div class="utanum2">
         <utanum class="ut">
             
-            <a href="https://arnarbb.github.io/ssg-verk3-n-stum/output/home.html" class="icon1"><span class="icon-spoon-knife"></span>bread</a>
+            <a href="posts/my.html" class="icon1"><span class="icon-spoon-knife"></span>bread</a>
         </utanum>
         <utanum class="ut">
             
@@ -134,7 +136,7 @@
     </div>
   
     <div class="nav">
-      <label for="toggle">&#9776;</label>
+      <label id="label" for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle"/>
       <div class="menu">
         <a href="https://arnarbb.github.io/ssg-verk3-n-stum/output/home.html" class="icon1"><span class="icon-spoon-knife"></span>bread</a>
@@ -302,7 +304,86 @@
 
 
     <!-- <br> -->
-
+    <div class="table">
+      <table>
+          
+          <caption>vinsælast</caption>
+          <tr>
+              <th>matur</th>
+              <th>pantanir</th>
+              <th>kokkur</th>
+          </tr>
+          <tr>
+              <td><a href="#" style="text-decoration: none;" >souffle</a> </td>
+              <td>18,430</td>
+              <td>AlliB</td>
+          </tr>
+          <tr>
+              <td><a href="#" style="text-decoration: none;">Beef Wellington</a></td>
+              <td>7,600</td>
+              <td>gordon ramsay</td>
+          </tr>
+          <tr>
+              <td><a href="#" style="text-decoration: none;">súkkulaðimús</a></td>
+              <td>ekki neitt</td>
+              <td>jamie oliver</td>
+          </tr>
+          <tr>
+              <td colspan="3"><center><a href="goolge.com"><button >skoða bettur</button></a></center></td>
+          </tr>
+      </table>
+      </div>
+  
+     <center>
+       <form  style="width: auto; display: block; margin: 0px; padding: 40px;" action="" method="GET">
+          <div class="flex">
+          <div>
+              <div style="height: min-content;">
+                  <label style="display: inline-block; font-size: large; " for="username">Username</label>
+                  <input type="text" placeholder="Nafnið þitt" name="username" required >
+              </div>
+              <div style="height: min-content;">
+                   <label style="display: inline-block; font-size: large;" for="password" >password</label>
+                  <input type="password"  placeholder="Lykkilorð" required>
+              </div>
+              <div style="height: min-content;">
+                  <label style="display: inline-block; font-size: large;" for="email">Email</label>
+                  <input type="email" required>
+              </div>
+      </div>
+      <div class="second-chlid">
+              <div style="height: min-content;">
+                  <label style="display: inline-block; font-size: large;" for="Aldur">Aldur</label>
+                  <input type="number" required min="3" max="100" placeholder="100?">
+              </div>
+              <div style="height: min-content;">
+                  <label style="display: inline-block; font-size: large;" for="tel">síminn</label>
+                  <input type="tel" required>
+              </div>
+              <div style="height: min-content;">
+                  <label style="display: inline-block; font-size: large;" for="date">dagsetning</label>
+                  <input type="date" required>
+              </div>
+          </div>
+      </div>
+      <div style="display: block;">
+          <label style="display: block; width: auto; display: inline-block;" for="radio">karl</label>
+          <input name="kyn" type="radio" style="display: inline-block;">
+          <label style="display: block; width: auto;  display: inline-block;" for="radio" >kerling</label>
+          <input name="kyn"  type="radio" style="display: inline-block;">
+      </div>
+      <div style="display: inline-block; margin-top: 30px;">
+          <center><label  style="display: inline-block; margin-top: 10px;" for="bio">atugasemd</label></center>
+          <textarea name="text" id="text" cols="30" rows="10"></textarea>
+      </div>
+  
+          <button style="display: inline-block;" type="submit">Submit</button>
+      
+       </form>  
+      </center>           
+      
+  
+  
 
 </section>
 </body>

@@ -387,7 +387,9 @@ div.slide-right h1 {
 
 .drop {
   display: none;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
   right: 10px;
 }
 
@@ -396,7 +398,6 @@ div.slide-right h1 {
     background-color: lightblue;
   }
   .utanum2 {
-    position: absolute;
     left: -1000px;
   }
   .burger {
@@ -488,7 +489,7 @@ html {
   line-height: 70px;
 }
 
-label {
+#label {
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
@@ -509,7 +510,7 @@ label {
   .nav {
     display: contents;
   }
-  label {
+  #label {
     display: block;
     cursor: pointer;
   }
