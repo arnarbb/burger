@@ -1,0 +1,26 @@
+
+.nav{
+    display: none;
+}
+@media only screen and (max-width: 48em) {
+    .nav{
+        
+        display: block;
+        position: fixed;
+        top: 1px;
+        right: 1px;
+        visibility:visible;
+        z-index: 2;
+        
+        top: 1px;
+        margin-right: 50px;
+        float: left;
+    }
+    
+    .utanum2{
+        position: abolute;
+        float: right;
+        margin-left: 2em;
+        visibility: hidden;
+    }  
+}  

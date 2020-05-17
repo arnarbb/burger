@@ -395,12 +395,13 @@ div.slide-right h1 {
 
 @media only screen and (max-width: 48em) {
   body {
-    background-color: lightblue;
+    background-color: #51b7df;
   }
   .utanum2 {
     left: -1000px;
   }
   .burger {
+    display: block;
     width: 35px;
     height: 5px;
     background-color: black;
@@ -418,6 +419,7 @@ div.slide-right h1 {
     background-color: white;
   }
   .drop {
+    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -503,7 +505,7 @@ html {
 }
 
 .nav {
-  display: none;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 48em) {
@@ -516,11 +518,11 @@ html {
   }
   .menu {
     background-color: red;
-    position: absolute;
-    right: -30px;
+    position: fixed;
     top: 0px;
+    right: 90px;
     text-align: center;
-    width: 30%;
+    z-index: 2;
     display: none;
   }
   .menu a {
